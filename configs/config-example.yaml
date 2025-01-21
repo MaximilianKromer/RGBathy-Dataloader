@@ -1,0 +1,15 @@
+root_dir: "dataset"
+shader_folders:
+  - "Shader1-24-11-15-01"
+  - "Shader2-24-11-15-02"
+pair_mode: "normal_no_waves"   # Mögliche Werte: "normal_no_sunglint", "no_sunglint_no_waves", "normal_filtered_no_waves", ...
+split:
+  train: 0.8
+  val: 0.1
+  test: 0.1
+seed: 42
+proportional_shaders: true       # Falls man pro Shader-Unterordner anteilig ziehen will
+transform_mode: "crop"            # Mögliche Werte: "resize", "crop"
+size: 256                          # Größe des Ausschnitts / der Größe des Bildes
+use_augmentation: true              # Falls man Augmentation an-/ausschalten möchte
+batch_size: 8
